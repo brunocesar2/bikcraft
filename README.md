@@ -13,6 +13,3 @@ O projeto consiste em um comércio de bicicletas elétricas para praticar os con
 ## Layout web
 <img src="https://github.com/brunocesar2/bikcraft/assets/111947999/24ae520f-42a5-4f18-8c05-d375ebd817f3" width="800px">
 <img src="https://github.com/brunocesar2/bikcraft/assets/111947999/a97468a7-0741-48fa-a5ee-1975cbb81f94" width="800px">
-
-## Tecnologias utilizadas
-- HTML / CSS / JS
