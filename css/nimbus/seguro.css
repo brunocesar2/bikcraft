@@ -1,0 +1,67 @@
+.seguro {
+  background: #111;
+  padding: 0 6rem;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  box-shadow: inset 0 120px #fff, inset 0 -120px #000;
+}
+.seguro-conteudo {
+  display: grid;
+  align-content: center;
+}
+.seguro p {
+  color: #b2b2b2;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  line-height: 1.5;
+}
+.seguro .botao {
+  justify-self: start;
+}
+@media (max-width: 1320px) {
+  .seguro {
+    padding: 0 1rem;
+    box-shadow: inset 0 90px #fff, inset 0 -90px #000;
+  }
+}
+@media (max-width: 1050px) {
+  .seguro {
+    gap: 1.25rem;
+    box-shadow: inset 0 60px #fff, inset 0 -60px #000;
+  }
+  .seguro p {
+    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
+  }
+  .seguro .titulo {
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .seguro {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem 1rem 0 1rem;
+    box-shadow: inset 0 0 #fff, inset 0 -80px #000;
+  }
+  .seguro p {
+    font-size: initial;
+    padding-bottom: 1rem;
+  }
+  .seguro .titulo {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .seguro-conteudo {
+    grid-row: 1;
+  }
+  .seguro-imagem img {
+    height: 18rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}

@@ -1,0 +1,83 @@
+.faq {
+  padding: 7rem;
+}
+.faq dl {
+  padding-top: 2rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.faq dl div:nth-child(odd) {
+  background: #f3f3f3;
+}
+.faq div {
+  padding: 1.25rem;
+}
+.faq button {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+}
+.faq button::before {
+  content: "";
+  display: inline-block;
+  background: #fb0;
+  width: 12px;
+  height: 8px;
+}
+.faq button::after {
+  content: "";
+  background-image: url(../../img/expand-button_icon-icons.com_72763.svg);
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  transition: .5s;
+}
+
+.faq dd {
+  max-width: 50vw;
+  padding-left: 20px;
+  display: none;
+}
+.faq dd.active {
+  display: block;
+  animation: anime-response .5s forwards;
+}
+.faq button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+@keyframes anime-response {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 170px;
+  }
+}
+@media (max-width: 1320px) {
+  .faq {
+    padding: 7rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .faq {
+    padding: 3rem 1rem 0 1rem;
+  }
+  .faq dl {
+    padding-top: 0;
+  }
+  .faq dd {
+    max-width: initial;
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,60 @@
+.titulo {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+.titulo-detalhe {
+  color: #fb0;
+}
+.botao {
+  font-size: 1.1rem;
+  color: #332200;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  padding: 0.9rem 1.75rem;
+  display: inline-block;
+  border-radius: 4px;
+}
+.botao:hover {
+  background: rgb(233, 171, 0);
+}
+.texto {
+  font-size: 1.5rem;
+  color: #b2b2b2;
+  font-weight: normal;
+  padding-bottom: 0.25rem;
+}
+.texto-bicicletas {
+  font-size: 32px;
+  color: #b2b2b2;
+  font-weight: normal;
+  padding-bottom: 0.25rem;
+}
+.container {
+  background: #111;
+  color: #fff;
+  padding: 4rem 5.5rem 2rem 5.5rem;
+}
+@media (max-width: 1320px) {
+  .container {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .botao {
+    font-size: initial;
+    padding: 0.75rem 1rem;
+  }
+  .texto,
+  .texto-bicicletas {
+    font-size: initial;
+  }
+  .container {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+}

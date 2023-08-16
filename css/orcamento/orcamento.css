@@ -1,0 +1,83 @@
+.orcamento {
+  background: #111;
+  padding: 0 6rem 7rem 6rem;
+  box-shadow: inset 0 -662px #eee;
+}
+.orcamento .container {
+  padding-left: 0;
+}
+.orcamento h2 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-column: 1/-1;
+}
+.orcamento h2::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  background: #fb0;
+  position: absolute;
+  left: -10px;
+}
+.orcamento-form {
+  background: #fff;
+  padding: 3.8rem 3.75rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.5rem;
+}
+.orcamento-form .botao {
+  border: none;
+  border-radius: 4px;
+  justify-self: start;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.orcamento input {
+  background: #f5f5f5;
+  padding: 0.9rem 0.75rem;
+  border: none;
+  border: 1px solid #eee;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem 0;
+}
+.orcamento input:focus {
+  border: 1px solid #fb0;
+  box-shadow: 0 0 0 2px #fea;
+  background: #fff;
+}
+.orcamento-form h2 {
+  padding-bottom: 1rem;
+}
+.orcamento-entrega {
+  padding-top: 1.5rem;
+}
+.orcamento-form input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.orcamento-cpf,
+.orcamento-email {
+  grid-column: 1/-1;
+}
+@media (max-width: 1320px) {
+  .orcamento {
+    padding: 0 1rem 7rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .orcamento {
+    padding: 0 1rem 3rem 1rem;
+  }
+  .orcamento-form {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+  }
+}

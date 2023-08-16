@@ -1,0 +1,111 @@
+.footer {
+  background: #000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  padding: 3.75rem 6rem;
+}
+.footer a {
+  color: #b2b2b2;
+  font-size: 1.1rem;
+  line-height: 2.25;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer-copy {
+  font-size: 1.1rem;
+  padding-top: 5rem;
+  color: #b2b2b2;
+  grid-column: 1/-1;
+}
+.footer li {
+  font-size: 1.1rem;
+  line-height: 2.25;
+  color: #b2b2b2;
+}
+.footer-contato,
+.footer-informacoes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.footer h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.footer-email {
+  position: relative;
+}
+.footer-email::after {
+  content: "";
+  position: absolute;
+  background: #333;
+  width: 27vw;
+  height: 1px;
+  display: block;
+  bottom: 12px;
+}
+.footer-contato a {
+  display: inline-block;
+}
+.footer-redes {
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+.footer-redes {
+  position: relative;
+}
+.footer-redes::before {
+  content: "";
+  position: absolute;
+  background: #333;
+  width: 27vw;
+  height: 1px;
+  top: 10px;
+}
+.footer-email {
+  padding-bottom: 1.75rem;
+}
+@media (max-width: 1320px) {
+  .footer {
+    padding: 3.75rem 1rem;
+  }
+}
+@media (max-width: 1140px) {
+  .footer {
+    gap: 0 7rem;
+  }
+  .footer-logo {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem 1rem;
+  }
+  .footer-copy {
+    padding-top: 0;
+    font-size: 1rem;
+  }
+  .footer h3 {
+    padding-bottom: 1rem;
+  }
+  .footer li {
+    font-size: 1rem;
+  }
+  .footer a {
+    font-size: 1rem;
+  }
+  .footer-email::after {
+    width: 70vw;
+  }
+  .footer-redes::before {
+    width: 70vw;
+  }
+}

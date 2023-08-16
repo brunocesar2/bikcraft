@@ -1,0 +1,44 @@
+.termos-conteudo h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.termos-item {
+  padding-bottom: 3.5rem;
+  max-width: 50vw;
+  line-height: 1.5;
+}
+.termos-conteudo {
+  padding: 5rem 5.5rem 0 5.5rem;
+}
+.termos-item2 {
+  padding-bottom: 1.5rem;
+  max-width: 50vw;
+  line-height: 1.5;
+}
+@media (max-width: 1320px) {
+  .termos-conteudo {
+    padding: 5rem 1rem 0 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .termos-item2 {
+    max-width: initial;
+  }
+  .termos-item {
+    max-width: initial;
+  }
+}
+@media (max-width: 600px) {
+  .termos-conteudo {
+    padding: 3rem 1rem 0 1rem;
+  }
+  .termos-item {
+    padding-bottom: 3rem;
+  }
+  .termos-item2 {
+    padding-bottom: 1rem;
+  }
+  .termos-conteudo h2 {
+    padding-bottom: 1rem;
+  }
+}

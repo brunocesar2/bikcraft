@@ -1,0 +1,37 @@
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* Utilidades */
+@import "./utilidades/animacao.css";
+@import "./utilidades/componentes.css";
+
+/* Home */
+@import "./home/introducao.css";
+@import "./home/bicicletas.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./home/seguros.css";
+
+/* Bicicletas */
+@import "./bicicletas/bicicletas-lista.css";
+
+/* Seguros */
+@import "./seguros/vantagem.css";
+@import "./seguros/faq.css";
+
+/* Bicicleta */
+@import "./nimbus/bicicleta.css";
+@import "./nimbus/bicicletas-container.css";
+@import "./nimbus/seguro.css";
+
+/* Orçamento */
+@import "./orcamento/orcamento.css";
+
+/* Contato */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
+
+/* Termos */
+@import "./termos/termos.css";

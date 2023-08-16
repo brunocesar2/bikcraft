@@ -1,0 +1,77 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.depoimento img {
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.depoimento-mensagem {
+  background: #fb0;
+  display: grid;
+  place-content: end;
+  padding: 5rem;
+  gap: 2rem;
+}
+.depoimento-texto {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  line-height: 1.25;
+  font-style: italic;
+  font-weight: 900;
+  color: #332200;
+  position: relative;
+}
+.depoimento span {
+  font-size: 1.1rem;
+  color: #664400;
+  font-weight: bold;
+}
+.depoimento-texto:after {
+  content: "❞";
+  position: absolute;
+  font-size: 4rem;
+  color: rgb(226, 166, 0);
+}
+.depoimento-texto:before {
+  content: "❝";
+  position: absolute;
+  left: -45px;
+  top: -15px;
+  font-size: 4rem;
+  color: rgb(226, 166, 0);
+}
+@media (max-width: 1140px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+  }
+  .depoimento img {
+    height: 12.5rem;
+  }
+  .depoimento-mensagem {
+    padding: 5rem 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .depoimento span {
+    font-size: initial;
+  }
+  .depoimento-texto {
+    font-size: 1.5rem;
+  }
+  .depoimento-texto:after {
+    font-size: 2.5rem;
+  }
+  .depoimento-texto:before {
+    font-size: 2.5rem;
+    left: -30px;
+  }
+  .depoimento-mensagem {
+    padding: 2rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
