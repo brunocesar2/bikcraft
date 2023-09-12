@@ -3,7 +3,9 @@ export default function initChangeImage() {
   const images = document.querySelectorAll("[data-gallery-images] img");
   if (galleryImages && images.length) {
     images.forEach((image) => {
-      image.addEventListener("click", changeImage);
+      ["touchstart", "click"].forEach((userEvent) => {
+      image.addEventListener(userEvent, changeImage);
+      })
     });
     function changeImage(event) {
       galleryImages.prepend(event.currentTarget);
