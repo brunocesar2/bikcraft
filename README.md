@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Bikcraft é o projeto final criado no curso de HTML/CSS da Origamid.
+Bikcraft é o projeto final criado no curso de html e css da origamid.
 
 O projeto consiste em um comércio de bicicletas elétricas para praticar os conhecimentos adquiridos durante o curso. 
 
