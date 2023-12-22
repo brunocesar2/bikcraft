@@ -1,12 +1,12 @@
 export default function initChangeImage() {
-  const galleryImages = document.querySelector("[data-gallery-images]");
-  const images = document.querySelectorAll("[data-gallery-images] img");
-  if (galleryImages && images.length) {
+  const gallery = document.querySelector("[data-gallery]");
+  const images = document.querySelectorAll("[data-gallery] img");
+  if (gallery && images.length) {
     images.forEach((image) => {
-      image.addEventListener("click", changeImage);
+      image.addEventListener("click", handleClick);
+      function handleClick() {
+        gallery.prepend(image);
+      }
     });
-    function changeImage(event) {
-      galleryImages.prepend(event.currentTarget);
-    }
   }
 }
