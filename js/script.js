@@ -5,6 +5,6 @@ initNavDetail();
 initAccordionNav();
 initChangeImage();
 
-if (window.SimpleAnime) {
+if (SimpleAnime) {
   new SimpleAnime();
 }
