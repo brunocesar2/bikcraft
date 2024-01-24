@@ -46,9 +46,6 @@
     background: #111;
     border-radius: 4px;
   }
-  .header-menu a:hover {
-    background: #222;
-  }
   .header-menu a:before {
     display: none;
   }
