@@ -19,6 +19,24 @@
 .botao:hover {
   background: rgb(233, 171, 0);
 }
+.botao-right-arrow {
+  font-size: 1.1rem;
+  color: #332200;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  padding: 0.9rem 1.75rem;
+  display: flex;
+  border-radius: 4px;
+  gap: .5rem;
+}
+.botao-right-arrow:after {
+  content: "";
+  background: url("../../img/icons8-seta-para-a-direita-96.png");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
 .texto {
   font-size: 1.5rem;
   color: #b2b2b2;
